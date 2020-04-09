@@ -5,13 +5,16 @@ import { TaskRepository } from './task.repository';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Task } from './task.entity';
 import { TaskStatus } from './enums/task-status';
-import { DeleteResult } from 'typeorm';
 
 @Injectable()
 export class TasksService {
   constructor(
     @InjectRepository(TaskRepository) private taskRepository: TaskRepository,
   ) {}
+
+  async getTasks(filterDto: GetTaskFilterDto): Promise<Task[]> {
+    return this.taskRepository.getTasks(filterDto);
+  }
   /* private tasks: Task[] = [];
 
   getAllTasks() {
