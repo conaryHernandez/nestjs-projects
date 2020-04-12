@@ -28,13 +28,16 @@
     "@nestjs/typeorm": "^7.0.0",
     "@types/mongodb": "^3.5.5",
     "apollo-server-express": "^2.12.0",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.1",
     "graphql": "^14.6.0",
     "graphql-tools": "^4.0.7",
     "mongodb": "^3.5.5",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.24",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",
